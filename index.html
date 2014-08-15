@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Sarim Zaidi | Web/UI developer | Mobile app developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="" type="text/css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
+<link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/hint.min.css">
+
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<link href="css/fontcustom.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+
+
+<!-- CSS code from Bootply.com editor -->
+
+<style type="text/css">
+/* -- custom css for Bootstrap 3.x --*/
+
+/* move special fonts to HTML head for better performance */
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family:Arial,sans-serif;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+.row { margin: 0; padding: 0 }
+
+
+/* use special fonts in certain elements */
+.title{
+    font-family: 'Julius Sans One', sans-serif;
+    color: #ffffff;
+
+}
+h1,h2,h3,h4,.lead,.btn,.navbar  {
+
+    font-family:'Voltaire',Arial,sans-serif;
+    letter-spacing:2px;
+}
+
+a{
+
+    outline: none;
+    text-decoration: none;
+}
+
+a i{
+    color: #9441ff;
+
+}
+.time{
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 1%;
+
+    font-family: 'Calligraffitti', cursive;
+}
+
+.subtitle{
+    color: #ffffff;
+    font-family:'Voltaire',Arial,sans-serif;
+
+}
+
+.subtitlepos{
+    color: #ffffff;
+    text-transform: lowercase;
+    font-family: 'Calligraffitti', cursive;
+    letter-spacing: 2px;
+}
+
+
+/* make images gray */
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(80%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.icon-bar {
+    background-color:#fff;
+}
+
+.scroll-down a, .scroll-top a {
+    color:#ffffff;
+}
+
+.scroll-down {
+    position:fixed;
+    bottom:20%;
+    right:0%;
+    color:#f9f9f9;
+}
+
+.scroll-top {
+    background-color:#dbdbdb;
+}
+
+.vert {
+    vertical-align: middle;
+    width:100%;
+    height: 100%;
+    padding-top:1%;
+    text-align:center;
+}
+.vert1{
+    vertical-align: middle;
+    width:100%;
+
+    padding-top:1%;
+    text-align:center;
+}
+
+.header .btn-lg {
+    font-size:28px;
+    border-color:#eeeeee;
+    padding:15px;
+    background-color:transparent;
+    color:#ffffff;
+}
+
+.header .btn-lg:hover {
+    background-color:#eeeeee;
+    color:#777777;
+}
+
+.navbar a {
+    color:#fff;
+    font-size:14px;
+}
+
+.navbar-bold.affix {
+    background-color:#d46054;
+}
+
+.navbar-bold {
+    background-color:#f68076;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.navbar-bold li a:hover, .navbar-bold li.active {
+    background-color:#d46054;
+}
+
+
+.header h1 {
+    font-size:80px;
+    -webkit-text-stroke: 1px rgba(f,f,f,0.1);
+    color:#431a6d;
+    color:#fff;
+    margin-left:-5px;
+    margin-bottom:5px;
+    text-transform:uppercase;
+}
+
+.header .lead {
+    color:#d46054;
+    font-size:25px;
+}
+
+.header {
+    height: 80%;
+    background: #f68076 url('images/stardust.png') repeat fixed;
+   /* background-color:#67b168;*/
+}
+
+/* use alt in navbar and header for different color */
+/*
+.alt {
+    background-color: #6E28C9;
+}*/
+
+.alt .lead {
+
+    color: #3B0496;
+}
+
+.alt.affix {
+    background-color:#4C06AB;
+}
+
+.alt li a:hover, .alt li.active {
+    background-color:#5D17BA;
+}
+
+
+
+.blurb {
+    padding: 120px 0;
+    background-color:#dddddd;
+    opacity: 0.8;
+}
+
+.blurb .panel {
+    background-color:transparent;
+}
+
+.bright {
+    background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed;
+    color:#777;
+}
+
+.featurette {
+    background: url("images/congruent_outline.png") repeat fixed;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.featurette-item {
+    margin-bottom: 15px;
+}
+
+.featurette-item > i {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.featurette-item > i:hover {
+    font-size: 68px;
+}
+
+.callout {
+    color: #ffffff;
+    padding-top:7%;
+    height: 100%;
+    width: 100%;
+    background: url('images/photoback.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gallery {
+    padding: 50px 0;
+}
+
+.call-to-action {
+    background: #eeeeee;
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+footer {
+    padding: 100px 0;
+}
+
+
+/* -- end custom css for Bootstrap 3.x --*/
+
+</style>
+
+
+
+
+</head>
+
+
+
+<body  >
+
+
+
+<div class="header alt vert">
+    <div class="container">
+        <img class="img-circle grayscale"  src="images/profilepic%20(1).jpg" width="20%" />
+        <h2 class="title">Sarim Zaidi </h2>
+        <h4 class="subtitle"><i class="fa fa-book"></i>| Masters student in computer science at University of Florida | </h4>
+        <h4 class="subtitle"><i class="fa fa-university"></i>    | Bachelor of Engineering in computer science | </h4>
+        <h3 class="subtitlepos">| Web developer with an <i class="fa fa-eye"></i> for design |</h3>
+        <h3 class="subtitlepos">| Mobile application developer |</h3>
+
+        <!--<a href="#" class="btn btn-default btn-lg">Recent Projects</a>-->
+
+
+    </div>
+</div>
+
+
+<div id="sec1" class="blurb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Technologies </h1>
+                <h2>i <i class="fa fa-heart-o"></i> working on </h2>
+                <h3>and have worked on</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 class="pull-right">
+                         <img src="images/java1.png" alt="java" title="java" width="10%"  />
+                        <img src="images/js1.png" alt="javascript" title="javascript" width="10%">
+                        <img src="images/html4.png" alt="HTML5" title="html5" width="10%"/>
+                        <img src="images/android3.png" title="android" width="10%">
+                        <img src="images/phonegap-logo.png" alt="phonegap" title="phonegap" width="10%">
+
+                    </h1>
+                </div>
+                <div class="col-md-5">
+                    <h1 class="pull-right">
+                        <img src="images/joomla1.png" alt="joomla" title="joomla" width="10%"/>
+                        <img src="images/social67.png" alt="wordpress" title="wordpress" width="10%"/>
+                        <img src="images/jquery_logo.png" alt="jquery" title="jquery" width="10%">
+                        <img src="images/icn-jquerymobile-logo.png" alt="jquerymobile" title="jquerymobile" width="10%">
+                        <img src="images/windows17.png" alt="windows phone" title="windows phone" width="10%">
+                    </h1>
+                </div>
+                <div class="col-md-5">
+                    <h1 class="pull-right">
+                        <img src="images/nodejs.png" alt="nodejs" title="nodejs" width="10%"/>
+                        <img src="images/bootstrap-logo.png" alt="bootstrap" title="bootstrap" width="10%"/>
+                        <img src="images/Icon_MongoDB_by_xkneo.png" alt="mongodb" title="mongodb" width="10%">
+                        <img src="images/AngularJS-Shield-large.png" alt="angularjs" title="angularjs" width="10%">
+
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<h2 class="time">My Timeline</h2>
+<h3 class="time"><i class="fa fa-arrows-h icon-2x"></i> </h3>
+<hr/>
+<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Anmr_rNZKci6dHBJblhCNWw3NnN2N01KdjhuNW9tMmc&font=Bevan-PotanoSans&maptype=toner&lang=en&start_at_end=true&hash_bookmark=true&height=650' width='100%' height='650' frameborder='0'></iframe><div class="featurette" id="sec2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Personal Interest</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-3 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-music"></i>
+                    <h4>Dance</h4>
+                    <p>A passionate crazy 'hip hopper'</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-photo"></i>
+                    <h4>Amateur Photography</h4>
+                    <p>More of a photoshopper than a photographer</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-pencil-square-o"></i>
+                    <h4>Design</h4>
+                    <p>Amateur but passionate digital designer</p>
+                </div>
+            </div>
+    <!--        <div class="col-md-2 text-center">
+                <div class="featurette-item">
+                    <i class="icon-pencil"></i>
+                    <h4>Blog</h4>
+                    <p>Blogger when beside the beach and pensive</p>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<div class="blurb alt vert1">
+    <form class="form-inline">
+
+        <div class="form-group">
+            <button id="image-gallery-button" type="button" class="btn btn-primary btn-lg">
+                <i class="glyphicon glyphicon-picture"></i>
+                Launch Image Gallery
+            </button>
+        </div>
+
+    </form>
+</div>
+
+
+    <div id="links">
+        <a href="images/photography/fbground.jpg" title="football ground" data-gallery>
+
+        </a>
+        <a href="images/photography/grass.jpg"title="prairie" data-gallery>
+
+        </a>
+        <a href="images/photography/log.jpg" title="the wet log" data-gallery>
+
+        </a>
+        <a href="images/photography/metalonbeach.jpg" title="rust on the beach" data-gallery>
+
+        </a>
+        <a href="images/photography/sb.jpg"title="santa barbara" data-gallery>
+
+        </a>
+        <a href="images/photography/stones.jpg" title="stones" data-gallery>
+
+        </a>
+        <a href="images/photography/yellowscene.jpg" title="bird watching point" data-gallery>
+
+        </a>
+    </div>
+
+
+<!--<div class="blurb" id="sec4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Blogs coming soon</h1>
+
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<hr>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h3>Contact Me</h3>
+                    <img width="40%" src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3ASarim+Zaidi%0AN%3AZaidi%3BSarim%0ATITLE%3AWeb+Developer%0ATEL%3BHOME%3BVOICE%3A352-678-7774%0AEMAIL%3BHOME%3BINTERNET%3Az.sarim%40gmail.com%0AEMAIL%3BWORK%3BINTERNET%3Asarim.zaidi%40citrix.com%0AURL%3Ahttp%3A%2F%2Fwww.sarimzaidi.com%0AADR%3A%3B%3B3800+SW+34th+street+apt+CC286%3BGainesville%3B%3B32608%3BUnited+States%0AORG%3ACitrix+Online+LLC%0AEND%3AVCARD%0A&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="qr code" />
+                    <p>z.sarim@gmail.com</p>
+
+                <hr>
+                <p class="lead">Key ingredients to cook this website | Bootstrap | TimelineJs | Nexus4 | Fontawesome | Bootply </p>
+                <p>sarimzaidi.com ©2014</p>
+                <a href="http://www.facebook.com/sarimzizou" target="_blank"> <i class="fa fa-facebook-square icon-2x"></i></a>
+                <a href="https://www.linkedin.com/in/sarimzaidis" target="_blank"><i class="fa fa-linkedin-square icon-2x"></i></a>
+                <a href="https://twitter.com/itzsarim" target="_blank"><i class="fa fa-twitter icon-2x"></i></a>
+                <a href="https://github.com/itzsarim" target="_blank"><i class="fa fa-git-square icon-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<ul class="nav pull-right scroll-top">
+    <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
+</ul>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+<script src="js/demo.js"></script>
+
+
+
+
+
+<!-- JavaScript jQuery code from Bootply.com editor  -->
+
+<script type='text/javascript'>
+
+    $(document).ready(function() {
+
+        /* smooth scrolling for scroll to top */
+        $('.scroll-top').click(function(){
+            $('body,html').animate({scrollTop:0},800);
+        })
+        /* smooth scrolling for scroll down */
+        $('.scroll-down').click(function(){
+            $('body,html').animate({scrollTop:$(window).scrollTop()+800},1000);
+        })
+
+        /* highlight the top nav as scrolling occurs */
+        $('body').scrollspy({ target: '#navbar' })
+
+
+    });
+
+</script>
+
+
+</body>
+</html>
